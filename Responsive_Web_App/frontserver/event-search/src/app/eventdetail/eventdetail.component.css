@@ -1,0 +1,210 @@
+.box {
+    border-radius: 20px 20px 20px 20px;
+    background-color: rgba(255, 255, 255, 0.3);
+    backdrop-filter: blur(7px);
+    border-bottom-left-radius: 5px !important;
+    border-bottom-right-radius: 5px !important;
+}
+
+.detail_header{
+    color: #67D4BF
+}
+
+.onsale{
+    background-color: green;
+    padding-left: 8px;
+    padding-right: 8px;
+    padding-top: 2px;
+    padding-bottom: 2px;
+}
+
+.offsale{
+    background-color: red;
+    padding-left: 8px;
+    padding-right: 8px;
+    padding-top: 2px;
+    padding-bottom: 2px;
+}
+
+.canceled{
+    background-color: black;
+    padding-left: 8px;
+    padding-right: 8px;
+    padding-top: 2px;
+    padding-bottom: 2px;
+}
+
+.rescheduled{
+    background-color: orange;
+    padding-left: 8px;
+    padding-right: 8px;
+    padding-top: 2px;
+    padding-bottom: 2px;
+}
+
+.googlemap{
+    background-color: #DD3444;
+    padding-left: 12px;
+    padding-right: 12px;
+    padding-top: 6px;
+    padding-bottom: 6px;
+}
+
+.showColor{
+    color: #81C6E4;
+}
+
+.showTwoLines{
+    overflow: hidden;
+    text-overflow: ellipsis;
+    white-space: normal;
+    line-height: 1.2;
+    height: 3.6em;
+    word-wrap: break-word;
+    display: -webkit-box;
+/*        -webkit-line-clamp:  ;*/
+    -webkit-box-orient: vertical;
+}
+
+.twt{
+    padding-left: 0px;
+    padding-right: 0px;
+    padding-bottom: 0px;
+    padding-top: 0px;
+}
+
+.popular{
+    position: absolute;
+    top: 100px;
+}
+
+.popular-node{
+    position: absolute;
+    top: 105px;
+}
+
+
+@media screen and (max-width: 767px) {
+    .popular {
+        top: 230px;
+    }
+    .popular-node {
+        top: 235px;
+      }
+}
+
+.transp{
+    color: #4E5457;
+    opacity: 1.0 !important;
+}
+
+.modalFont{
+    font-size: 20px;
+}
+
+.custom-footer {
+    display: flex;
+    justify-content: space-between;
+  }
+  
+.custom-footer .btn {
+margin-right: auto;
+}
+  
+
+.map{
+    width: 100%;
+    height: 100%;
+}
+
+.mat-mdc-tab-group.mat-background-primary, .mat-mdc-tab-nav-bar.mat-background-primary {
+    --mat-mdc-tab-header-with-background-background-color: #479989;
+}
+
+.mat-mdc-tab-group.mat-tabs-with-background > .mat-mdc-tab-header .mdc-tab-indicator__content--underline,
+.mat-mdc-tab-group.mat-tabs-with-background > .mat-mdc-tab-header .mat-mdc-tab-header-pagination-chevron,
+.mat-mdc-tab-group.mat-tabs-with-background > .mat-mdc-tab-header .mat-mdc-focus-indicator::before {
+  border-color: #3F50B5 !important;
+}
+
+.mat-mdc-tab-group.mat-tabs-with-background > .mat-mdc-tab-header .mat-mdc-tab .mdc-tab {
+    min-width: 90px !important;
+    padding-right: 0 !important;
+    padding-left: 0 !important;
+  }
+
+::ng-deep .mat-mdc-tab-group.mat-mdc-tab-group-stretch-tabs>.mat-mdc-tab-header .mat-mdc-tab {
+    flex-grow: 0 !important;
+}
+
+/* .mat-tab-label {
+    flex-grow: 0 !important;
+  } */
+
+/* .mat-mdc-tab-labels{
+    padding-left: 30%;
+    padding-right: 30%;
+} */
+
+.mat-mdc-tab-list{
+    margin-left: 14% !important;
+    margin-right: 14% !important;
+}
+
+.txtleft{
+    text-align: left !important;
+}
+
+.showTwoLines {
+  -webkit-box-orient: vertical;  
+  overflow: hidden;
+  height: 2.4em; /* Adjust this value as needed */
+  line-height: 1.2em; /* This should match the height value divided by 2 */
+}
+
+.showAllLines {
+  display: block;
+  -webkit-line-clamp: unset;
+  overflow: unset;
+  height: auto;
+}
+
+.rounded-radius{
+    border-bottom-left-radius: 5px;
+    border-bottom-right-radius: 5px;
+}
+
+.nonepadding{
+    padding-left: 0px;
+    padding-right: 0px;
+}
+
+.rounded-circle {
+    width: 110px;
+    height: 110px;
+    object-fit: cover;
+    border-radius: 50%;
+  }
+
+  @media only screen and (max-width: 767px) {
+    .small-image {
+      /* max-width: 60%; */
+    }
+  }
+
+  @media only screen and (max-width: 767px) {
+    .mobpadding {
+        padding-left: 20%;
+        padding-right: 20%;
+        /* align-items: center; */
+    }
+  }
+
+  @media only screen and (max-width: 767px) {
+    .givepadding {
+        padding-left: 10%;
+        padding-right: 10%;
+        /* align-items: center; */
+    }
+  }
+  

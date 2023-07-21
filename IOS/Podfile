@@ -1,0 +1,11 @@
+platform :ios, '12.0'
+
+target 'eventsearch' do
+  # Your app's dependencies
+  pod 'Alamofire', '~> 5.4'
+  use_frameworks!
+  pod 'SwiftyJSON'
+  pod 'Kingfisher'
+end
+
+project '/Users/jennie/Desktop/CSCI571/homework9/eventsearch/eventsearch.xcodeproj'

@@ -1,0 +1,11 @@
+nav a{
+    color: white;
+    font-size: 17px;
+}
+
+.active-link{
+    border-color: white;
+    border-radius: 8px;
+    box-shadow: none;
+}
+

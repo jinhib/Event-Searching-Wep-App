@@ -1,0 +1,32 @@
+.mintColor{
+    color: #67D4BF
+}
+
+
+.rounded-radius{
+    border-top-right-radius: 15px;
+    border-top-left-radius: 15px;
+    border-bottom-left-radius: 15px;
+    border-bottom-right-radius: 15px;
+}
+
+.graybg:hover{
+    background-color: #EDECEC;
+}
+
+/* .graybg:hover > td:first-child {
+
+    border-bottom-left-radius: 15px;
+  } */
+  
+.graybg:hover > td:last-child {
+/* border-top-right-radius: 15px; */
+border-bottom-right-radius: 15px;
+
+}
+
+.graybg:hover > th:first-child {
+    /* border-top-right-radius: 15px; */
+    border-bottom-left-radius: 15px;
+    
+    }

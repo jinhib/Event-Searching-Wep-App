@@ -1,0 +1,6 @@
+framework module Pods_eventsearch {
+  umbrella header "Pods-eventsearch-umbrella.h"
+
+  export *
+  module * { export * }
+}

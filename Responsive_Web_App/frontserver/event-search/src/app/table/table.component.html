@@ -1,0 +1,39 @@
+<div *ngIf="searchService.events && !isDetail">
+    <div class="container mt-3">
+        <div *ngIf="searchService.events?.length == 0">
+            <p class="bg-white text-danger text-center rounded-pill px-3 py-2 mx-auto" style="max-width: 800px;">No results available</p>
+        </div>
+    </div>
+
+    <div class="container mt-3" *ngIf="searchService.events?.length > 0">
+        <div id="search_container" class="p-3">
+            <div class="table-responsive">
+              <table id="search_table" class="rounded-left rounded-right darkbg table text-white text-center table-borderless">
+            <thead>
+              <tr>
+                <th width="180px" height="30px">Date/Time</th>
+                <th width="180px">Icon</th>
+                <th width="540px">Event</th>
+                <th width="180px">Genre</th>
+                <th width="250px" class="rounded-right">Venue</th>
+              </tr>
+            </thead>
+            <tbody>
+              <tr (click)="eventsDetail(i)" *ngFor="let event of searchService.events; index as i" style="cursor: pointer;" class="border-0" [class.lessdarkbg]="i%2==0" [class.darkbg]="i%2==1">
+                <th>{{event.dates.start.localDate}}<br>{{event.dates.start.localTime}}</th>
+                <td><img [src]="event.images[0].url" alt="img" style="width: 80px; height: 80px;"></td>
+                <td>{{event.name}}</td>
+                <td>{{event.classifications[0].segment.name}}</td>
+                <td>{{event._embedded.venues[0].name}}</td>
+              </tr>
+            </tbody>
+          </table>
+        </div>
+        </div>
+    </div>
+      
+</div>
+
+
+<app-eventdetail class="m-1" *ngIf="isDetail" (dataEvent)="receiveData($event)" [eventId]="searchService.events[selectedIndex].id" 
+    [eventName]="searchService.events[selectedIndex].name" [venueName] = "searchService.events[selectedIndex]._embedded.venues[0].name"></app-eventdetail>

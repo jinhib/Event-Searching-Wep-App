@@ -1,0 +1,15 @@
+.darkbg{
+    background-color: #212529;
+}
+.lessdarkbg{
+    background-color: #2C2F34;
+}
+
+.rounded-right{
+    border-top-right-radius: 10px;
+}
+
+.rounded-left{
+    border-top-left-radius: 10px;
+}
+
