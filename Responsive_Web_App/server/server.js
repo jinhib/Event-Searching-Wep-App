@@ -2,7 +2,7 @@ const express = require('express');
 const app = express();
 const cors = require('cors');
 const geohash = require('ngeohash');
-const my_token = "xG2A7ULyOoJXjO5XyLp7m86oKxyK6A0G";
+
 var SpotifyWebApi = require('spotify-web-api-node');
 const port = process.env.PORT || 8080;
 const path = require('path');
